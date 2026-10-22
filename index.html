@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="Selected artwork and studies by Alan.">
+  <title>Alan — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <section class="tear-screen" aria-label="Opening screen">
+    <canvas class="tear-canvas" aria-hidden="true"></canvas>
+    <div class="cover-heading" aria-hidden="true"><span>Alan / Selected work</span><span>An invitation to look closer</span></div>
+    <h1 class="visually-hidden">Pull and tear the cloth to enter Alan's portfolio</h1>
+    <p class="tear-instruction">Drag to pull. Keep going to tear.</p>
+    <button class="open-button" type="button">Skip intro <span aria-hidden="true">↗</span></button>
+  </section>
+
+  <main class="portfolio" id="portfolio" tabindex="-1">
+    <header class="site-header">
+      <a class="wordmark" href="#top">Alan</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <section class="intro" id="top">
+      <p class="eyebrow">AP Art Portfolio</p>
+      <h1>Alan</h1>
+      <p class="intro-note">Selected work and studies</p>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <h2 id="work-title">Work</h2>
+        <p>Selected pieces</p>
+      </div>
+      <div class="work-grid">
+        <figure class="work-item">
+          <img src="images/blue-portrait-study.png" alt="Close-up portrait surrounded by blue and teal marks" loading="lazy">
+          <figcaption><span>Portrait study</span><span>01</span></figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/figures-in-landscape.png" alt="Painted figures among dark, rocky forms" loading="lazy">
+          <figcaption><span>Figures in landscape</span><span>02</span></figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/seed-forms-study.png" alt="Expressive drawing of figures and large seed-like forms" loading="lazy">
+          <figcaption><span>Seed forms</span><span>03</span></figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/anatomy-sketchbook.png" alt="Sketchbook collage of anatomy and movement studies" loading="lazy">
+          <figcaption><span>Anatomy studies</span><span>04</span></figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/body-and-orbit-study.png" alt="Red figure with flowing forms among blue circular shapes" loading="lazy">
+          <figcaption><span>Body and orbit</span><span>05</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Alan</h2>
+      <p class="statement-placeholder">
+        Moving from landlocked Nepal to lush FL wetlands, I watched microorganisms roll & twist under a lens. Consumed by what I examine & need to document my exploration of microscopic life. Used microscope as tool & inserted 'Alan' into slide as a newcomer, suspended among organisms he cannot comprehend. He investigates the series of fleeting moments of discovery, hesitation, and obsession. I positioned him alongside critters & patterns on my slides. I invite the viewer to wonder into the unexpected w me, finding that intentional observation can expand the smallest detail into a profound discovery.</p>
+    </section>
+
+    <footer class="site-footer">
+      <span>Alan</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+</body>
+</html>

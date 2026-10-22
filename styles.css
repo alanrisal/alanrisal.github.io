@@ -41,15 +41,53 @@ a:focus-visible {
 }
 
 .tear-screen {
+  display: none;
   position: fixed;
   inset: 0;
   z-index: 4;
   overflow: hidden;
-  background:
-    linear-gradient(140deg, rgba(255,255,255,0.6), rgba(255,255,255,0.15)),
-    var(--paper);
-  transition: opacity 700ms ease, visibility 700ms ease;
-  box-shadow: inset 0 0 0 1px rgba(28, 27, 26, 0.08);
+  transition: opacity 500ms ease, visibility 500ms ease;
+}
+
+body.intro-active {
+  overflow: hidden;
+}
+
+.intro-active .tear-screen {
+  display: block;
+}
+
+.cover-heading {
+  position: absolute;
+  inset: 30px 32px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.tear-instruction {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.is-torn .cover-heading,
+.is-torn .tear-instruction {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.is-pulling .tear-canvas {
+  cursor: grabbing;
 }
 
 .tear-screen.is-opening {
@@ -101,6 +139,10 @@ a:focus-visible {
 .portfolio {
   width: min(100% - 48px, 1040px);
   margin-inline: auto;
+}
+
+.portfolio:focus {
+  outline: none;
 }
 
 .portfolio[hidden] {
@@ -245,6 +287,16 @@ a:focus-visible {
 }
 
 @media (max-width: 600px) {
+  .cover-heading {
+    inset: 24px 20px auto;
+    font-size: 10px;
+  }
+
+  .cover-heading span:last-child {
+    max-width: 130px;
+    text-align: right;
+  }
+
   .portfolio {
     width: min(100% - 32px, 1040px);
   }
