@@ -60,9 +60,9 @@
     ink.fillStyle = '#282821'; ink.textAlign = 'center'; ink.textBaseline = 'middle';
     const size = Math.min(width * 0.17, 164);
     ink.font = `italic ${size}px Georgia, serif`;
-    ink.fillText('Look closer.', width / 2 + 12, height * 0.45 + 12);
+    ink.fillText('Yooooo.', width / 2 + 12, height * 0.45 + 12);
     ink.font = '12px "Segoe UI", sans-serif';
-    ink.fillText('P U L L   A T   T H E   T H R E A D S', width / 2 + 12, height * 0.45 + size * 0.65 + 12);
+    ink.fillText('enjoy', width / 2 + 12, height * 0.45 + size * 0.65 + 12);
     ink.strokeStyle = 'rgba(87, 77, 57, 0.055)'; ink.lineWidth = 0.5; ink.beginPath();
     for (let x = 0; x < texture.width; x += 5) { ink.moveTo(x, 0); ink.lineTo(x, texture.height); }
     for (let y = 0; y < texture.height; y += 5) { ink.moveTo(0, y); ink.lineTo(texture.width, y); }
